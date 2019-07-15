@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lentilhas com espinafres e ovos escalfados | goNutri</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<style>
+    /*----------------------------------------------------- CSS do NavBar ------------------------------------------------------*/
+            @import url(http://fonts.googleapis.com/css?family=Oswald);
+            #cssmenu,
+            #cssmenu ul,
+            #cssmenu ul li,
+            #cssmenu ul li a,
+            #cssmenu #menu-button {
+              margin: 0;
+              padding: 0;
+              border: 0;
+              list-style: none;
+              line-height: 1;
+              display: block;
+              position: relative;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+            }
+            #cssmenu:after,
+            #cssmenu > ul:after {
+              content: ".";
+              display: block;
+              clear: both;
+              visibility: hidden;
+              line-height: 0;
+              height: 0;
+            }
+            #cssmenu #menu-button {
+              display: none;
+            }
+            #cssmenu {
+              width: auto;
+              border: 3px solid black;
+              border-radius: 0px;
+              font-family: 'Montserrat', sans-serif;
+              line-height: 1;
+              background: #222;
+              box-shadow: 1px 1px 0 #0d0d0d, 2px 2px 0 #0d0d0d, 3px 3px 3px rgba(0, 0, 0, 0.35);
+            }
+            #cssmenu > ul {
+              background: url('images/bg.png');
+            }
+            #cssmenu > ul > li {
+              float: left;
+            }
+            #cssmenu.align-center > ul {
+              font-size: 0;
+              text-align: center;
+            }
+            #cssmenu.align-center > ul > li {
+              display: inline-block;
+              float: none;
+            }
+            #cssmenu.align-right > ul > li {
+              float: right;
+            }
+            #cssmenu > ul > li > a {
+              padding: 20px 25px;
+              font-size: 14px;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: #aaa;
+              -webkit-transition: all .2s ease;
+              -moz-transition: all .2s ease;
+              -ms-transition: all .2s ease;
+              -o-transition: all .2s ease;
+              transition: all .2s ease;
+            }
+            #cssmenu > ul > li > a:hover,
+            #cssmenu > ul > li:hover > a,
+            #cssmenu > ul > li.active > a {
+              color: white;
+            }
+
+
+
+
+            .hidden{
+                display:none;
+            }
+            
+            .unhidden{
+                display:block;
+            }
+</style>
+
+<body style="background-image:url('images/bg-01 - Cópia.jpg')">
+    <!-- _______________________________________________________ Navbar ________________________________________________________________-->
+
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='goNutri.html'>Home</a></li>
+            <li><a href='refeicoes.html'>Refeições</a></li>
+            <li><a href="perfil.html">Os nossos nutricionistas</a></li>
+            <li style="float: right;"><a href='loginV2.html'>Login</a></li>
+            <li style="float: right;"><a href='loginV2.html'>A minha conta</a></li>
+        </ul>
+    </div>
+
+    <!-- _______________________________________________________ Body _________________________________________________________________-->
+<div class="container" style="border: 2px solid black; margin-top: 20px; margin-bottom: 20px; border-radius: 40px; background: white; font-family: 'Montserrat', sans-serif;">
+    <div>
+        <h1>
+            <center>
+                <p style="font-size: 60px;">Lentilhas com espinafres e ovos escalfados</p>
+                <p>4,7 ★ (39 reviews)</p>
+            </center>
+        </h1>
+    </div>
+<div>
+    <center><img class="imgMeal" src="images/refeicoes/lentilhas.jpg" style="width: 600px; height: 350px; margin-top: 10px; border: 5px solid black;"></center>
+</div>
+
+<div style="margin:20px; margin-top: 30px;">
+  <b style="font-size: 20px;">Ingredientes</b>
+  <table class="table table-striped table-condensed">
+      <tbody id="tbody">
+          <tr>
+              <td>Lentilhas verdes</td>
+              <td><input type="checkbox" name="ingredientes" value="Lentilhas" checked></td>
+          </tr>
+          <tr>
+              <td>Espinafres</td>
+              <td><input type="checkbox" name="ingredientes" value="Espinafres" checked></td>
+          </tr>
+          <tr>
+              <td>Cebola</td>
+              <td><input type="checkbox" name="ingredientes" value="Cebola" checked></td>
+          </tr>
+          <tr>
+              <td>Azeite</td>
+              <td><input type="checkbox" name="ingredientes" value="Azeite" checked></td>
+          </tr>
+          <tr>s
+              <td>Ovos</td>
+              <td><input type="checkbox" name="ingredientes" value="Ovos" checked></td>
+          </tr>
+          <tr>
+              <td>Sal</td>
+              <td><input type="checkbox" name="ingredientes" value="Sal" checked></td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+
+<div style="margin:20px;">
+  <b style="font-size: 20px;">Informação Nutricional</b>
+  <table class="table table-striped table-condensed">
+      <tbody id="tbody">
+          <tr>
+              <td>Energia</td>
+              <td>411 kcal</td>
+          </tr>
+          <tr>
+              <td>Lípidos</td>
+              <td>52 g</td>
+          </tr>
+          <tr>
+              <td>Hidratos de Carbono</td>
+              <td>6 g</td>
+          </tr>
+          <tr>
+              <td>Proteínas</td>
+              <td>50 g</td>
+          </tr>
+          <tr>
+              <td>Fibra</td>
+              <td>0,9 g</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+<center>
+   <h3>Comentários adicionais</h3>
+   <textarea name="message" rows="5" cols="50" placeholder="*Exemplo*"></textarea>
+</center>
+<center><a href="checkout.html" type="button" class="btn btn-primary" style="font-size: 30px; margin-top: 15px; margin-bottom: 30px;">CHECKOUT</a></center>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

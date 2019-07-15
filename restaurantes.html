@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurantes | goNutri</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!--icon-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    <style>
+        /*----------------------------------------------------- CSS do NavBar ------------------------------------------------------*/
+        @import url(http://fonts.googleapis.com/css?family=Oswald);
+
+        #cssmenu,
+        #cssmenu ul,
+        #cssmenu ul li,
+        #cssmenu ul li a,
+        #cssmenu #menu-button {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+            line-height: 1;
+            display: block;
+            position: relative;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+            #cssmenu:after,
+            #cssmenu > ul:after {
+                content: ".";
+                display: block;
+                clear: both;
+                visibility: hidden;
+                line-height: 0;
+                height: 0;
+            }
+
+            #cssmenu #menu-button {
+                display: none;
+            }
+
+        #cssmenu {
+            width: auto;
+            border: 3px solid black;
+            border-radius: 0px;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1;
+            background: #222;
+            box-shadow: 1px 1px 0 #0d0d0d, 2px 2px 0 #0d0d0d, 3px 3px 3px rgba(0, 0, 0, 0.35);
+        }
+
+            #cssmenu > ul {
+                background: url('images/bg.png');
+            }
+
+                #cssmenu > ul > li {
+                    float: left;
+                }
+
+            #cssmenu.align-center > ul {
+                font-size: 0;
+                text-align: center;
+            }
+
+                #cssmenu.align-center > ul > li {
+                    display: inline-block;
+                    float: none;
+                }
+
+            #cssmenu.align-right > ul > li {
+                float: right;
+            }
+
+            #cssmenu > ul > li > a {
+                padding: 20px 25px;
+                font-size: 14px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #aaa;
+                -webkit-transition: all .2s ease;
+                -moz-transition: all .2s ease;
+                -ms-transition: all .2s ease;
+                -o-transition: all .2s ease;
+                transition: all .2s ease;
+            }
+
+                #cssmenu > ul > li > a:hover,
+                #cssmenu > ul > li:hover > a,
+                #cssmenu > ul > li.active > a {
+                    color: white;
+                }
+    </style>
+
+
+</head>
+<body style="font-family: 'Montserrat', sans-serif; background-image:url(images/tamari-lawrenceville-outside-patio.jpg)" >
+
+    <!-- _______________________________________________________ Navbar ________________________________________________________________-->
+
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='refeicoes.html'>Refeições</a></li>
+            <li><a href="perfil.html">Os nossos nutricionistas</a></li>
+            <li class='active'><a href="restaurantes.html">Restaurantes</a></li>
+            <li style="float: right;"><a href='loginV2.html'>Login</a></li>
+            <li style="float: right;"><a href='loginV2.html'>A minha conta</a></li>
+        </ul>
+    </div>
+    <div class="container" style="margin-top: 50px">
+        <div style="margin-bottom:20px; font-size:larger">
+            <h1 class="panel__highlight" style="color:white; text-shadow:2px 2px 5px #222">Restaurantes</h1>
+            <p class="panel__highlight" style="color:white; text-shadow:2px 2px 5px #222">Abaixo podes encontrar um conjunto de informações acerca de restaurantes nossos parceiros, nos quais podes levantar as tuas encomendas, se preferires. Encontra o restaurante mais perto de ti!</p>
+        </div>
+        
+        
+        <div class="panel panel-body">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#aveiro">Aveiro</a></li>
+                <li><a data-toggle="tab" href="#porto">Porto</a></li>
+                <li><a data-toggle="tab" href="#lisboa">Lisboa</a></li>
+                <li><a data-toggle="tab" href="#faro">Faro</a></li>
+            </ul>
+            <div class="tab-content" style="min-height: 400px;">
+                <div class="tab-pane fade in active" id="aveiro">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Restaurante Sensações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morada</td>
+                                <td>Largo do Rossio, nº 659</td>
+                            </tr>
+                            <tr>
+                                <td>Código Postal</td>
+                                <td>1402-999 Aveiro</td>
+                            </tr>
+                            <tr>
+                                <td>Contactos</td>
+                                <td>+351 22 631 549</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Restaurante Ribeirinho</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morada</td>
+                                <td>Praça Marquês de Pombal</td>
+                            </tr>
+                            <tr>
+                                <td>Código Postal</td>
+                                <td>1402-999 Aveiro</td>
+                            </tr>
+                            <tr>
+                                <td>Contactos</td>
+                                <td>+351 22 218 647</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade in active" id="porto">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2">O Bairro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morada</td>
+                                <td>Avenida de Gustavo Eiffel 202</td>
+                            </tr>
+                            <tr>
+                                <td>Código Postal</td>
+                                <td>1-186-080 Porto</td>
+                            </tr>
+                            <tr>
+                                <td>Contactos</td>
+                                <td>+351 24 364 053</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Tasca D'ouro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morada</td>
+                                <td>R. do Ouro 223</td>
+                            </tr>
+                            <tr>
+                                <td>Código Postal</td>
+                                <td>4-103-947 Porto</td>
+                            </tr>
+                            <tr>
+                                <td>Contactos</td>
+                                <td>+351 24 005 935</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="lisboa">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Capital</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morada</td>
+                                <td>Parque das Nações, 84</td>
+                            </tr>
+                            <tr>
+                                <td>Código Postal</td>
+                                <td>1-177-106 Lisboa</td>
+                            </tr>
+                            <tr>
+                                <td>Contactos</td>
+                                <td>+351 28 356 554</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2">O Lusitano</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morada</td>
+                                <td>Bairro Alto, 242</td>
+                            </tr>
+                            <tr>
+                                <td>Código Postal</td>
+                                <td>1-028-321 Lisboa</td>
+                            </tr>
+                            <tr>
+                                <td>Contactos</td>
+                                <td>+351 28 092 897</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="faro">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Infante Sagres</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morada</td>
+                                <td>R. de São Pedro, 61</td>
+                            </tr>
+                            <tr>
+                                <td>Código Postal</td>
+                                <td>8-424-038 Faro</td>
+                            </tr>
+                            <tr>
+                                <td>Contactos</td>
+                                <td>+351 26 058 102</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Marisco Del Rei</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Morada</td>
+                                <td>Largo de Camões, 10</td>
+                            </tr>
+                            <tr>
+                                <td>Código Postal</td>
+                                <td>8-083-642 Faro</td>
+                            </tr>
+                            <tr>
+                                <td>Contactos</td>
+                                <td>+351 26 713 365</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="margin-bottom:60px; background-color:white; font-size:larger" class="panel panel-body">
+            <h4 class="panel__highlight"><b>Para parcerias:</b></h4>
+            <p class="panel__highlight">Se tens um restaurante ou estabelecimento similar e queres associar-te a nós, podes saber mais <a href="contactos.html">aqui</a> sobre como fazê-lo.</p>
+        </div>
+
+
+    </div>
+
+  
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

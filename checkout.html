@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>goNutri</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!--icon-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+</head>
+<style>
+	/*----------------------------------------------------- CSS do NavBar ------------------------------------------------------*/
+			@import url(http://fonts.googleapis.com/css?family=Oswald);
+			#cssmenu,
+			#cssmenu ul,
+			#cssmenu ul li,
+			#cssmenu ul li a,
+			#cssmenu #menu-button {
+			  margin: 0;
+			  padding: 0;
+			  border: 0;
+			  list-style: none;
+			  line-height: 1;
+			  display: block;
+			  position: relative;
+			  -webkit-box-sizing: border-box;
+			  -moz-box-sizing: border-box;
+			  box-sizing: border-box;
+			}
+			#cssmenu:after,
+			#cssmenu > ul:after {
+			  content: ".";
+			  display: block;
+			  clear: both;
+			  visibility: hidden;
+			  line-height: 0;
+			  height: 0;
+			}
+			#cssmenu #menu-button {
+			  display: none;
+			}
+			#cssmenu {
+			  width: auto;
+			  border: 3px solid black;
+			  border-radius: 0px;
+			  font-family: 'Montserrat', sans-serif;
+			  line-height: 1;
+			  background: #222;
+			  box-shadow: 1px 1px 0 #0d0d0d, 2px 2px 0 #0d0d0d, 3px 3px 3px rgba(0, 0, 0, 0.35);
+			}
+			#cssmenu > ul {
+			  background: url('images/bg.png');
+			}
+			#cssmenu > ul > li {
+			  float: left;
+			}
+			#cssmenu.align-center > ul {
+			  font-size: 0;
+			  text-align: center;
+			}
+			#cssmenu.align-center > ul > li {
+			  display: inline-block;
+			  float: none;
+			}
+			#cssmenu.align-right > ul > li {
+			  float: right;
+			}
+			#cssmenu > ul > li > a {
+			  padding: 20px 25px;
+			  font-size: 14px;
+			  text-transform: uppercase;
+			  text-decoration: none;
+			  color: #aaa;
+			  -webkit-transition: all .2s ease;
+			  -moz-transition: all .2s ease;
+			  -ms-transition: all .2s ease;
+			  -o-transition: all .2s ease;
+			  transition: all .2s ease;
+			}
+			#cssmenu > ul > li > a:hover,
+			#cssmenu > ul > li:hover > a,
+			#cssmenu > ul > li.active > a {
+			  color: white;
+			}
+
+						body {
+			  font-family: 'Montserrat', sans-serif;
+			  font-size: 17px;
+			}
+			
+			* {
+			  box-sizing: border-box;
+			}
+			
+			.row {
+			  display: -ms-flexbox; /* IE10 */
+			  display: flex;
+			  -ms-flex-wrap: wrap; /* IE10 */
+			  flex-wrap: wrap;
+			  margin: 0 -16px;
+			}
+			
+			.col-25 {
+			  -ms-flex: 25%; /* IE10 */
+			  flex: 25%;
+			}
+			
+			.col-50 {
+			  -ms-flex: 50%; /* IE10 */
+			  flex: 50%;
+			}
+			
+			.col-75 {
+			  -ms-flex: 75%; /* IE10 */
+			  flex: 75%;
+			}
+			
+			.col-25,
+			.col-50,
+			.col-75 {
+			  padding: 0 16px;
+			}
+			
+			.container {
+			  background-color: #f2f2f2;
+			  padding: 5px 20px 15px 20px;
+			  border: 1px solid lightgrey;
+			  border-radius: 3px;
+			}
+			
+			input[type=text] {
+			  width: 100%;
+			  margin-bottom: 20px;
+			  padding: 12px;
+			  border: 1px solid #ccc;
+			  border-radius: 3px;
+			}
+			
+			label {
+			  margin-bottom: 10px;
+			  display: block;
+			}
+			
+			.icon-container {
+			  margin-bottom: 20px;
+			  padding: 7px 0;
+			  font-size: 24px;
+			}
+			
+			.btn {
+			  background-color: #008000;
+			  color: white;
+			  padding: 12px;
+			  margin: 10px 0;
+			  border: none;
+			  width: 100px;
+			  border-radius: 3px;
+			  cursor: pointer;
+			  font-size: 17px;
+			}
+			
+			.btn:hover {
+			  background-color: #00b300;
+			  color: white;
+			}
+			
+			a {
+			  color: #2196F3;
+			}
+			
+			hr {
+			  border: 1px solid lightgrey;
+			}	
+			
+			span.price {
+			  float: right;
+			  color: grey;
+			}
+			
+			/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the 			direction - make the "cart" column go on top) */
+			@media (max-width: 800px) {
+			  .row {
+			    flex-direction: column-reverse;
+			  }
+			  .col-25 {
+			    margin-bottom: 20px;
+			  }
+			}
+</style>
+
+<!-- ____________________________________________________________ NAVBAR ___________________________________________________________________-->
+<body style="background-image:url('images/bg-01 - Cópia.jpg')">
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='goNutri.html'>Home</a></li>
+            <li><a href='refeicoes.html'>Refeições</a></li>
+            <li><a href="perfil.html">Os nossos nutricionistas</a></li>
+            <li style="float: right;"><a href='loginV2.html'>Login</a></li>
+            <li style="float: right;"><a href='loginV2.html'>A minha conta</a></li>
+        </ul>
+    </div>
+ <!-- ___________________________________________________________ BODY ________________________________________________________________________-->
+
+<div class="row" style="margin-top: 35px; margin-bottom: 25px;">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Informação de Entrega</h3>
+            <label for="fname"><i class="fa fa-user"></i>Nome completo</label>
+            <input type="text" id="fname" name="firstname" placeholder="Pedro Miguel Costa">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="pedro@examplo.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Adereço</label>
+            <input type="text" id="adr" name="address" placeholder="Rua Exemplo, nº123">
+            <label for="city"><i class="fa fa-institution"></i> Cidade</label>
+            <input type="text" id="city" name="city" placeholder="Viseu">
+            <label for="city"><i class="fa fa-institution"></i> Código Postal</label>
+            <input type="text" id="city" name="zip" placeholder="0000-00">
+
+        </div>
+
+          <div class="col-50">
+            <h3>Pagamento</h3>
+            <label for="fname">Formas de pagamento aceites</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-credit-card" style="color:orange;"></i>
+              <i class="fa fa-paypal" style="color:blue;"></i>
+            </div>
+            <label for="cname">Nome no cartão</label>
+            <input type="text" id="cname" name="cardname" placeholder="Pedro Miguel Costa">
+            <label for="ccnum">Número do cartão</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Mês de expiração</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Setembro">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Ano de expiração</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <center><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Terminar</button></center>
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">	
+      <p>Total <span class="price" style="color:black"><b>9€</b></span></p>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">A sua encomenda foi feita com secesso!</h4>
+        </div>
+        <div class="modal-body">
+          <p><a href="cliente.html">Siga a sua encomenda</a></p>
+          <p><a href="refeicoes.html">Voltar para as refeições</a></p>
+          <p><a href="index.html">Sair</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

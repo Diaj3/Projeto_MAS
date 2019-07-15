@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>goNutri | A minha conta</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+   
+    <!--icon-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+<style>
+    /*----------------------------------------------------- CSS do NavBar ------------------------------------------------------*/
+    @import url(http://fonts.googleapis.com/css?family=Oswald);
+
+    #cssmenu,
+    #cssmenu ul,
+    #cssmenu ul li,
+    #cssmenu ul li a,
+    #cssmenu #menu-button {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        list-style: none;
+        line-height: 1;
+        display: block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+        #cssmenu:after,
+        #cssmenu > ul:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+        #cssmenu #menu-button {
+            display: none;
+        }
+
+    #cssmenu {
+        width: auto;
+        border: 3px solid black;
+        border-radius: 0px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1;
+        background: #222;
+        box-shadow: 1px 1px 0 #0d0d0d, 2px 2px 0 #0d0d0d, 3px 3px 3px rgba(0, 0, 0, 0.35);
+    }
+
+        #cssmenu > ul > li {
+            float: left;
+        }
+
+        #cssmenu.align-center > ul {
+            font-size: 0;
+            text-align: center;
+        }
+
+            #cssmenu.align-center > ul > li {
+                display: inline-block;
+                float: none;
+            }
+
+        #cssmenu.align-right > ul > li {
+            float: right;
+        }
+
+        #cssmenu > ul > li > a {
+            padding: 20px 25px;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #aaa;
+            -webkit-transition: all .2s ease;
+            -moz-transition: all .2s ease;
+            -ms-transition: all .2s ease;
+            -o-transition: all .2s ease;
+            transition: all .2s ease;
+        }
+
+            #cssmenu > ul > li > a:hover,
+            #cssmenu > ul > li:hover > a,
+            #cssmenu > ul > li.active > a {
+                color: white;
+            }
+</style>
+<body style="background-image:url('images/bg-01 - Cópia.jpg')">
+    <!-- _______________________________________________________ Navbar ________________________________________________________________-->
+
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='refeicoes.html'>Refeições</a></li>
+            <li><a href="perfil.html">Os nossos nutricionistas</a></li>
+            <li><a href="restaurantes.html">Restaurantes</a></li>
+            <li style="float: right;"><a href='goNutri.html'>Logout</a></li>
+            <li style="float: right;" class="active"><a href='loginV2.html'>A minha conta</a></li>
+        </ul>
+    </div>
+
+    <!-- ______________________________________________________ CABECALHO ________________________________________________________ -->
+    <div class="container" style="margin: 25px;  width: 100%; font-family: 'Montserrat', sans-serif; padding:50px;">
+
+        <div>
+            <h1 style="font-family: 'Montserrat', sans-serif; font-size: 60px; margin-left: 27px; color:white; text-shadow:2px 2px 5px #222 ">A minha conta</h1>
+        </div>
+
+
+        <!-- ______________________________________________________ MENU LATERAL ________________________________________________________ -->
+        <div class="col-lg-3">
+            <div class="list-group">
+                <a href="#dadospessoais" class="list-group-item" id="botaoPerfil"><h4><i class="fas fa-user" style="margin-right:10px"></i>Perfil</h4></a>
+                <a href="#distribuicao" class="list-group-item" id="botaoEncomendas"><h4><i class="fas fa-cubes" style="margin-right:10px"></i>Encomendas para distribuição</h4></a>
+            </div>
+        </div>
+
+        <!-- ______________________________________________________ PERFIL ________________________________________________________ -->
+        <div class="panel panel-default col-lg-6" id="perfil">
+            <div class="panel-heading">
+                <div>
+                    <h3><i class="fas fa-user-circle fa-2x" style="margin-right:10px"></i>José Vaz</h3>
+                    <h5>Colaborador #381</h5>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div style="margin:5px" class="form-group">
+                    <label>
+                        Nome
+                    </label>
+                    <div>
+                        <input class="form-control" type="text" name="nome" value="José Vaz" readonly>
+                    </div>
+                </div>
+                <div style="margin:5px" class="form-group">
+                    <label>
+                        Email
+                    </label>
+                    <div>
+                        <input class="form-control" type="email" name="mail" value="jose@goNutri.pt" readonly>
+                    </div>
+                </div>
+
+                <div style="margin:5px" class="form-group">
+                    <label>
+                        Telemóvel
+                    </label>
+                    <div>
+                        <input class="form-control" type="text" name="phone" value="994 654 12">
+                    </div>
+                </div>
+
+                <div style="margin:5px" class="form-group">
+                    <label>
+                        Sexo
+                    </label>
+                </div>
+                <div>
+                    <select name="sex" class="form-control" disabled>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino" selected="selected">Masculino</option>
+                    </select>
+                </div>
+
+                <div style="margin:5px" class="form-group">
+                    <label>
+                        Data de nascimento
+                    </label>
+                </div>
+                <div>
+                    <input class="form-control" type="date" name="birthdate" value="1981-05-02" readonly>
+                </div>
+                <div style="margin:5px; margin-top:75px;" class="form-group">
+                    <label>
+                        Nome de utilizador
+                    </label>
+                    <div>
+                        <input class="form-control" type="text" name="username" value="joseVaz81">
+                    </div>
+                </div>
+                <div style="margin:5px; margin-top:20px;">
+                    <h4><strong>Mudar palavra-passe</strong></h4>
+                </div>
+                <div style="margin:5px" class="form-group">
+                    <label>
+                        Palavra-passe atual
+                    </label>
+                    <div>
+                        <input class="form-control" type="password" name="password">
+                    </div>
+                </div>
+                <div style="margin:5px" class="form-group">
+                    <label>
+                        Nova palavra-passe
+                    </label>
+                    <div>
+                        <input class="form-control" type="password" name="newpassword">
+                    </div>
+                </div>
+                <div style="margin:5px" class="form-group">
+                    <label>
+                        Confirmar nova palavra-passe
+                    </label>
+                    <div>
+                        <input class="form-control" type="password" name="confirmnewpassword">
+                    </div>
+                </div>
+                <div style="text-align:right">
+                    <button type="button" class="btn btn-primary" style="margin:5px; margin-top:20px; text-align:right" onclick="alert('Alterações guardadas com sucesso!');">Guardar alterações</button>
+                </div>
+
+                
+
+            </div>
+        </div>
+        
+         <!-- FIM PERFIL -->
+
+        
+
+        <!-- ______________________________________________________ ENCOMENDAS ________________________________________________________ -->
+        <div class="panel panel-default col-lg-6" id="order_pannel">
+            <div class="panel-heading">
+                <div>
+                    <h3 style="font-family: 'Montserrat', sans-serif;">Encomendas para distribuição</h3>
+                </div>
+            </div>
+            <div class="panel-body">
+                <!-- ______________________________________________________ PAINEL ENCOMENDA ________________________________________________________ -->
+                <div style="margin:5px">
+                    <div style="margin-top:10px;" class="panel-group ">
+                        <div class="panel panel-default col-lg-12">
+                            <!-- PAINEL MAPA -->
+                            <div class="panel-heading">
+                                <!-- CABECALHO -->
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse1">Encomenda goNutri <b>#684546</b>  04-06-2018</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body col-8">
+                                    <!-- CORPO -->
+                                    <!-- <h3 class="panel__highlight col-lg-7">Local de entrega</h3> -->
+                                    <div class="col-lg-7" style="margin-top:10px; margin-left:10px">
+                                        <iframe id="mapa" width="500" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpk61-gl17LQ6kl4edqnxJnXdcdFNO_Yw&q=Coimbra" allowfullscreen></iframe>
+                                        <!-- <img src="images/mapa.png" style="" /> -->
+                                    </div>
+                                    <div class="col-lg-7" style="margin:20px;">
+                                        <b>Notas extra</b>
+                                        <textarea name="message" rows="2" cols="50" class="form-control" disabled>Sem notas adicionais.</textarea>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Morada</b>
+                                            <br>Rua do Carmo, nº 659
+                                            <br>64-3648-3 Coimbra
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Período de Entrega</b>
+                                            <br>12h30 - 13h15
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-7" style="margin-left:20px; margin-top:10px">
+                                        <p>
+                                            <h3>Estado</h3>
+                                        </p>
+                                        <div class="form-group">
+                                            <div>
+                                                <select class="form-control" id="ccurso">
+                                                    <option value="semCurso" selected="selected">Atualizar estado da encomenda</option>
+                                                    <option value="ECT">Em distribuição</option>
+                                                    <option value="EET">Disponível para levantamento (em restaurante associado)</option>
+                                                    <option value="EI">Entregue (ao cliente)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- FIM PAINEL ENCOMENDA -->
+                <!-- ______________________________________________________ PAINEL ENCOMENDA ________________________________________________________ -->
+                <div style="margin:5px">
+                    <div style="margin-top:10px;" class="panel-group ">
+                        <div class="panel panel-default col-lg-12">
+                            <!-- PAINEL MAPA -->
+                            <div class="panel-heading">
+                                <!-- CABECALHO -->
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse2">Encomenda goNutri <b>#684230</b>  04-06-2018</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body col-8">
+                                    <!-- CORPO -->
+                                    <!-- <h3 class="panel__highlight col-lg-7">Local de entrega</h3> -->
+                                    <div class="col-lg-7" style="margin-top:10px; margin-left:10px">
+                                        <iframe id="mapa" width="500" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpk61-gl17LQ6kl4edqnxJnXdcdFNO_Yw&q=DETI+-+Departamento+de+Electrónica,+Telecomunicações+e+Informática" allowfullscreen></iframe>
+                                        <!-- <img src="images/mapa.png" style="" /> -->
+                                    </div>
+                                    <div class="col-lg-7" style="margin:20px;">
+                                        <b>Notas extra</b>
+                                        <textarea name="message" rows="2" cols="50" class="form-control" disabled>Sem notas adicionais.</textarea>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Morada</b>
+                                            <br>Departamento de Electrónica, Telecomunicações e Informática
+                                            <br>Universidade de Aveiro
+                                            <br>Campus Universitário de Santiago
+                                            <br>3810-193 Aveiro
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Período de Entrega</b>
+                                            <br>11h00 - 11h45
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-7" style="margin-left:20px; margin-top:10px">
+                                        <p>
+                                            <h3>Estado</h3>
+                                        </p>
+                                        <div class="form-group">
+                                            <div>
+                                                <select class="form-control" id="ccurso">
+                                                    <option value="semCurso" selected="selected">Atualizar estado da encomenda</option>
+                                                    <option value="ECT">Em distribuição</option>
+                                                    <option value="EET">Disponível para levantamento (em restaurante associado)</option>
+                                                    <option value="EI">Entregue (ao cliente)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- FIM PAINEL ENCOMENDA -->
+                <!-- ______________________________________________________ PAINEL ENCOMENDA ________________________________________________________ -->
+                <div style="margin:5px">
+                    <div style="margin-top:10px;" class="panel-group ">
+                        <div class="panel panel-default col-lg-12">
+                            <!-- PAINEL MAPA -->
+                            <div class="panel-heading">
+                                <!-- CABECALHO -->
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse3">Encomenda goNutri <b>#693277</b>  04-06-2018</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body col-8">
+                                    <!-- CORPO -->
+                                    <!-- <h3 class="panel__highlight col-lg-7">Local de entrega</h3> -->
+                                    <div class="col-lg-7" style="margin-top:10px; margin-left:10px">
+                                        <iframe id="mapa" width="500" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpk61-gl17LQ6kl4edqnxJnXdcdFNO_Yw&q=Ílhavo" allowfullscreen></iframe>
+                                        <!-- <img src="images/mapa.png" style="" /> -->
+                                    </div>
+                                    <div class="col-lg-7" style="margin:20px;">
+                                        <b>Notas extra</b>
+                                        <textarea name="message" rows="2" cols="50" class="form-control" disabled>Sem notas adicionais.</textarea>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Morada</b>
+                                            <br>Travessa dos Pescadores
+                                            <br>Nº 199 1º Dto
+                                            <br>3153-000 Ílhavo
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Período de Entrega</b>
+                                            <br>20h00 - 20h45
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-7" style="margin-left:20px; margin-top:10px">
+                                        <p>
+                                            <h3>Estado</h3>
+                                        </p>
+                                        <div class="form-group">
+                                            <div>
+                                                <select class="form-control" id="ccurso">
+                                                    <option value="semCurso" selected="selected">Atualizar estado da encomenda</option>
+                                                    <option value="ECT">Em distribuição</option>
+                                                    <option value="EET">Disponível para levantamento (em restaurante associado)</option>
+                                                    <option value="EI">Entregue (ao cliente)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- FIM PAINEL ENCOMENDA -->
+                <!-- ______________________________________________________ PAINEL ENCOMENDA ________________________________________________________ -->
+                <div style="margin:5px">
+                    <div style="margin-top:10px;" class="panel-group ">
+                        <div class="panel panel-default col-lg-12">
+                            <!-- PAINEL MAPA -->
+                            <div class="panel-heading">
+                                <!-- CABECALHO -->
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse4">Encomenda goNutri <b>#720939</b>  04-06-2018</a>
+                                </h4>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body col-8">
+                                    <!-- CORPO -->
+                                    <!-- <h3 class="panel__highlight col-lg-7">Local de entrega</h3> -->
+                                    <div class="col-lg-7" style="margin-top:10px; margin-left:10px">
+                                        <iframe id="mapa" width="500" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpk61-gl17LQ6kl4edqnxJnXdcdFNO_Yw&q=Gafanha+da+Nazaré" allowfullscreen></iframe>
+                                        <!-- <img src="images/mapa.png" style="" /> -->
+                                    </div>
+                                    <div class="col-lg-7" style="margin:20px;">
+                                        <b>Notas extra</b>
+                                        <textarea name="message" rows="2" cols="50" class="form-control" disabled>Sem notas adicionais.</textarea>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Morada</b>
+                                            <br>Rua das Flores
+                                            <br>Nº 53 2ºFrente
+                                            <br>0522-921-7 Gafanha da Nazaré
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Período de Entrega</b>
+                                            <br>18h30 - 19h15
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-7" style="margin-left:20px; margin-top:10px">
+                                        <p>
+                                            <h3>Estado</h3>
+                                        </p>
+                                        <div class="form-group">
+                                            <div>
+                                                <select class="form-control" id="ccurso">
+                                                    <option value="semCurso" selected="selected">Atualizar estado da encomenda</option>
+                                                    <option value="ECT">Em distribuição</option>
+                                                    <option value="EET">Disponível para levantamento (em restaurante associado)</option>
+                                                    <option value="EI">Entregue (ao cliente)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- FIM PAINEL ENCOMENDA -->
+                <!-- ______________________________________________________ PAINEL ENCOMENDA ________________________________________________________ -->
+                <div style="margin:5px">
+                    <div style="margin-top:10px;" class="panel-group ">
+                        <div class="panel panel-default col-lg-12">
+                            <!-- PAINEL MAPA -->
+                            <div class="panel-heading">
+                                <!-- CABECALHO -->
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse5">Encomenda goNutri <b>#723523</b>  04-06-2018</a>
+                                </h4>
+                            </div>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <div class="panel-body col-8">
+                                    <!-- CORPO -->
+                                    <!-- <h3 class="panel__highlight col-lg-7">Local de entrega</h3> -->
+                                    <div class="col-lg-7" style="margin-top:10px; margin-left:10px">
+                                        <iframe id="mapa" width="500" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpk61-gl17LQ6kl4edqnxJnXdcdFNO_Yw&q=Albergaria-a-Velha" allowfullscreen></iframe>
+                                        <!-- <img src="images/mapa.png" style="" /> -->
+                                    </div>
+                                    <div class="col-lg-7" style="margin:20px;">
+                                        <b>Notas extra</b>
+                                        <textarea name="message" rows="2" cols="50" class="form-control" disabled>Se não estiver na morada indicada para receber a encomenda, por favor deixar no Café Central da Praça. Obrigado</textarea>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Morada</b>
+                                            <br>Praça de São Pedro
+                                            <br>Nº 619 R/C Dto
+                                            <br>5532-124-3 Albergaria-a-Velha
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-5" style="margin:20px;">
+                                        <p>
+                                            <b>Período de Entrega</b>
+                                            <br>14h45 - 15h30
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-7" style="margin-left:20px; margin-top:10px">
+                                        <p>
+                                            <h3>Estado</h3>
+                                        </p>
+                                        <div class="form-group">
+                                            <div>
+                                                <select class="form-control" id="ccurso">
+                                                    <option value="semCurso" selected="selected">Atualizar estado da encomenda</option>
+                                                    <option value="ECT">Em distribuição</option>
+                                                    <option value="EET">Disponível para levantamento (em restaurante associado)</option>
+                                                    <option value="EI">Entregue (ao cliente)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- FIM PAINEL ENCOMENDA -->
+            </div>
+        </div>
+
+        
+        
+
+
+
+
+    </div>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/estafeta.js"></script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Os nossos nutricionistas | goNutri</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!--icon-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+</head>
+<style>
+	/*----------------------------------------------------- CSS do NavBar ------------------------------------------------------*/
+			@import url(http://fonts.googleapis.com/css?family=Oswald);
+			#cssmenu,
+			#cssmenu ul,
+			#cssmenu ul li,
+			#cssmenu ul li a,
+			#cssmenu #menu-button {
+			  margin: 0;
+			  padding: 0;
+			  border: 0;
+			  list-style: none;
+			  line-height: 1;
+			  display: block;
+			  position: relative;
+			  -webkit-box-sizing: border-box;
+			  -moz-box-sizing: border-box;
+			  box-sizing: border-box;
+			}
+			#cssmenu:after,
+			#cssmenu > ul:after {
+			  content: ".";
+			  display: block;
+			  clear: both;
+			  visibility: hidden;
+			  line-height: 0;
+			  height: 0;
+			}
+			#cssmenu #menu-button {
+			  display: none;
+			}
+			#cssmenu {
+			  width: auto;
+			  border: 3px solid black;
+			  border-radius: 0px;
+			  font-family: 'Montserrat', sans-serif;
+			  line-height: 1;
+			  background: #222;
+			  box-shadow: 1px 1px 0 #0d0d0d, 2px 2px 0 #0d0d0d, 3px 3px 3px rgba(0, 0, 0, 0.35);
+			}
+			#cssmenu > ul {
+			  background: url('images/bg.png');
+			}
+			#cssmenu > ul > li {
+			  float: left;
+			}
+			#cssmenu.align-center > ul {
+			  font-size: 0;
+			  text-align: center;
+			}
+			#cssmenu.align-center > ul > li {
+			  display: inline-block;
+			  float: none;
+			}
+			#cssmenu.align-right > ul > li {
+			  float: right;
+			}
+			#cssmenu > ul > li > a {
+			  padding: 20px 25px;
+			  font-size: 14px;
+			  text-transform: uppercase;
+			  text-decoration: none;
+			  color: #aaa;
+			  -webkit-transition: all .2s ease;
+			  -moz-transition: all .2s ease;
+			  -ms-transition: all .2s ease;
+			  -o-transition: all .2s ease;
+			  transition: all .2s ease;
+			}
+			#cssmenu > ul > li > a:hover,
+			#cssmenu > ul > li:hover > a,
+			#cssmenu > ul > li.active > a {
+			  color: white;
+			}
+/*____________________________________________________________ social media _____________________________________________________________ */
+	
+</style>
+<body style="background-image:url('images/NTR-DietTech.jpg'); background-position:left">
+    <!-- _______________________________________________________ Navbar ________________________________________________________________-->
+
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='refeicoes.html'>Refeições</a></li>
+            <li class='active'><a href="perfil.html">Os nossos nutricionistas</a></li>
+            <li><a href="restaurantes.html">Restaurantes</a></li>
+            <li style="float: right;"><a href='loginV2.html'>Login</a></li>
+            <li style="float: right;"><a href='loginV2.html'>A minha conta</a></li>
+        </ul>
+    </div>
+
+    <div class="container" style="margin-top: 50px; font-family: 'Montserrat', sans-serif;">
+        <div style="margin-bottom:20px; font-size:larger" >
+            <h1 class="panel__highlight" style="font-size:40px; color:white; text-shadow:2px 2px 5px #222 ">Os nossos nutricionistas</h1>
+            <p class="panel__highlight" style="color:white; text-shadow:2px 2px 5px #222">Conhece a equipa de nutrição que trabalha connosco diariamente para te trazer refeições de qualidade. Esclarece ainda as tuas questões diretamente com a equipa e faz as escolhas alimentares mais adequadas.</p>
+        </div>
+
+        <!-- PAINEL NUTRICIONISTA-->
+        <div class="panel panel-default"> 
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left">
+                       <img class="media-object" src="nutricionistas/01-shutterstock_476340928-Irina-Bg-1024x683.jpg" style="width: 350px; height: 250px">
+                        <div style="text-align:center">
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div style="margin: 20px;">
+                            <div class="col-lg-10">
+                                <h2 class="media-heading">Ana Simões</h2>                           
+                                <h4 class="media-heading">Viseu, Portugal</h4>
+                                <h4 class="media-heading">23 anos</h4> 
+                            </div>
+                            <div class="col-lg-2" style="text-align:right">
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#msg1"><i class="fas fa-envelope"></i></button>
+                            </div>
+                            <hr class="col-lg-12" />
+                            <h4 class="col-lg-12">Licenciada em Desporto pela Universidade de Coimbra</h4>
+                            <h4 class="col-lg-12">Personal Trainer</h4>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- FIM PAINEL NUTRICIONISTA-->
+
+
+        <!-- PAINEL NUTRICIONISTA-->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="nutricionistas/homem-nutri.jpg" style="width: 300px; height: 300px">
+                        <div style="text-align:center">
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div style="margin: 20px;">
+                            <div class="col-lg-10">
+                                <h2 class="media-heading">Bernardo Oliveira</h2>
+                                <h4 class="media-heading">Leiria, Portugal</h4>
+                                <h4 class="media-heading">28 anos</h4>
+                            </div>
+                            <div class="col-lg-2" style="text-align:right">
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#msg2"><i class="fas fa-envelope"></i></button>
+                            </div>
+                            <hr class="col-lg-12" />
+                            <h4 class="col-lg-12">Licenciado em Ciências da Nutrição pela Universidade Nova de Lisboa</h4>
+                            <h4 class="col-lg-12">Nutricionista</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- FIM PAINEL NUTRICIONISTA-->
+
+
+
+        <!-- PAINEL NUTRICIONISTA-->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="nutricionistas/homem fis.jpg" style="width: 350px; height: 287px">
+                        <div style="text-align:center">
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div style="margin: 20px;">
+                            <div class="col-lg-10">
+                                <h2 class="media-heading">Afonso Elias</h2>
+                                <h4 class="media-heading">Porto, Portugal</h4>
+                                <h4 class="media-heading">38 anos</h4>
+                            </div>
+                            <div class="col-lg-2" style="text-align:right">
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#msg3"><i class="fas fa-envelope"></i></button>
+                            </div>
+                            <hr class="col-lg-12" />
+                            <h4 class="col-lg-12">Licenciado em Educação Física e Desporto pela Universidade Lusófona do Porto</h4>
+                            <h4 class="col-lg-12">Mestre em Ciências da Educação pela Universidade do Porto</h4>
+                            <h4 class="col-lg-12">Fisiologista</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- FIM PAINEL NUTRICIONISTA-->
+
+
+        <!-- PAINEL NUTRICIONISTA-->
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left">
+                        <img class="media-object" src="nutricionistas/538335514.jpg" style="width: 300px; height: 316px">
+                        <div style="text-align:center">
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <div style="margin: 20px;">
+                            <div class="col-lg-10">
+                                <h2 class="media-heading">Catarina Geadas</h2>
+                                <h4 class="media-heading">Aveiro, Portugal</h4>
+                                <h4 class="media-heading">30 anos</h4>
+                            </div>
+                            <div class="col-lg-2" style="text-align:right">
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#msg4"><i class="fas fa-envelope"></i></button>
+                            </div>
+                            <hr class="col-lg-12" />
+                            <h4 class="col-lg-12">Licenciada em Fisioterapia pela Universidade de Aveiro</h4>
+                            <h4 class="col-lg-12">Mestre em Treino Desportivo pelo Instituto Politécnico da Maia</h4>
+                            <h4 class="col-lg-12">Fisioterapeuta</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- FIM PAINEL NUTRICIONISTA-->
+
+
+
+
+        <!-- ______________________________________________________ MODAIS MENSAGEM _____________________________________________ -->
+
+
+        <!-- MODAL MSG -->
+        <div class="modal fade" id="msg1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <!-- Conteúdo do modal -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h4 class="modal-title"><b>Enviar mensagem</b></h4>
+                    </div>
+
+
+                    <div style="margin:20px;">
+                        <div style="margin:5px" class="form-group">
+                            <label>
+                                Nome
+                            </label>
+                            <div>
+                                <input class="form-control" type="text" name="nome">
+                            </div>
+                        </div>
+                        <div style="margin:5px" class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <div>
+                                <input class="form-control" type="email" name="mail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin:20px;">
+                        <label class="col-lg-5" style="margin-top:30px;">Mensagem</label>
+                        <textarea name="comentarios" rows="4" cols="50" class="form-control"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="butaoenviarmsg1" class="btn btn-primary" data-dismiss="modal" style="margin-top:10px">Enviar</button>
+                        <button id="butaocancelarmsg1" class="btn btn-default" data-dismiss="modal" style="margin-top:10px">Cancelar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FIM DO MODAL MSG -->
+
+        <!-- MODAL MSG -->
+        <div class="modal fade" id="msg2" role="dialog">
+            <div class="modal-dialog" role="document">
+                <!-- Conteúdo do modal -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h4 class="modal-title"><b>Enviar mensagem</b></h4>
+                    </div>
+
+
+                    <div style="margin:20px;">
+                        <div style="margin:5px" class="form-group">
+                            <label>
+                                Nome
+                            </label>
+                            <div>
+                                <input class="form-control" type="text" name="nome">
+                            </div>
+                        </div>
+                        <div style="margin:5px" class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <div>
+                                <input class="form-control" type="email" name="mail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin:20px;">
+                        <label class="col-lg-5" style="margin-top:30px;">Mensagem</label>
+                        <textarea name="comentarios" rows="4" cols="50" class="form-control"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="butaoenviarmsg2" class="btn btn-primary" data-dismiss="modal" style="margin-top:10px">Enviar</button>
+                        <button id="butaocancelarmsg2" class="btn btn-default" data-dismiss="modal" style="margin-top:10px">Cancelar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FIM DO MODAL MSG -->
+
+        <!-- MODAL MSG -->
+        <div class="modal fade" id="msg3" role="dialog">
+            <div class="modal-dialog" role="document">
+                <!-- Conteúdo do modal -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h4 class="modal-title"><b>Enviar mensagem</b></h4>
+                    </div>
+
+
+                    <div style="margin:20px;">
+                        <div style="margin:5px" class="form-group">
+                            <label>
+                                Nome
+                            </label>
+                            <div>
+                                <input class="form-control" type="text" name="nome">
+                            </div>
+                        </div>
+                        <div style="margin:5px" class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <div>
+                                <input class="form-control" type="email" name="mail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin:20px;">
+                        <label class="col-lg-5" style="margin-top:30px;">Mensagem</label>
+                        <textarea name="comentarios" rows="4" cols="50" class="form-control"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="butaoenviarmsg3" class="btn btn-primary" data-dismiss="modal" style="margin-top:10px">Enviar</button>
+                        <button id="butaocancelarmsg3" class="btn btn-default" data-dismiss="modal" style="margin-top:10px">Cancelar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FIM DO MODAL MSG -->
+
+        <!-- MODAL MSG -->
+        <div class="modal fade" id="msg4" role="dialog">
+            <div class="modal-dialog" role="document">
+                <!-- Conteúdo do modal -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+                        <h4 class="modal-title"><b>Enviar mensagem</b></h4>
+                    </div>
+
+
+                    <div style="margin:20px;">
+                        <div style="margin:5px" class="form-group">
+                            <label>
+                                Nome
+                            </label>
+                            <div>
+                                <input class="form-control" type="text" name="nome">
+                            </div>
+                        </div>
+                        <div style="margin:5px" class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <div>
+                                <input class="form-control" type="email" name="mail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin:20px;">
+                        <label class="col-lg-5" style="margin-top:30px;">Mensagem</label>
+                        <textarea name="comentarios" rows="4" cols="50" class="form-control"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="butaoenviarmsg4" class="btn btn-primary" data-dismiss="modal" style="margin-top:10px">Enviar</button>
+                        <button id="butaocancelarmsg4" class="btn btn-default" data-dismiss="modal" style="margin-top:10px">Cancelar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FIM DO MODAL MSG -->
+
+    </div>
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/nossosnutricionistas.js"></script>
+</body>
+</html>
